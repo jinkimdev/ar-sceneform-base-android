@@ -10,7 +10,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.jinkimdev.arsceneformbase"
-        minSdkVersion 23
+        minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -42,3 +42,8 @@ dependencies {
     implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.6.0'
 
 }
+
+sceneform.asset('sampledata/cup.obj',
+        'default',
+        'sampledata/cup.sfa',
+        'src/main/assets/cup')
